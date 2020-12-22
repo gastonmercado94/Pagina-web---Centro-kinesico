@@ -1,0 +1,168 @@
+@import '_reset.scss';
+
+
+.pre__header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 17vh;
+
+    h1{
+        width:200px;
+        color:#059db2;
+
+        .color-title{
+            color:#48744d;
+        }
+    }
+
+    p{
+        color:#059db2;
+    }
+}
+
+.navbar{
+    height: 8vh;
+    background-color: #EEE;
+
+    .navbar__menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.main{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 75vh;
+    background-image: url(img/main2.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+    a{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:300px;
+        height:100px;
+        margin:0 20px 20px 50px;
+        background-color: rgba(255,255,255,0.5);
+
+        h2{
+            font-weight: normal !important;
+            color:white;
+        }
+    }
+
+    .main__div1{
+        background-color: rgba(5, 157, 178, 0.7);
+    }
+
+    .main__div2{
+        background-color: rgba(72, 116, 77, 0.7);
+    }
+}
+
+#nosotros{
+    margin: 30px 0 0 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3{
+        color:#059db2;
+        font-size: 50px;
+    }
+
+    .nosotros__relleno{
+        width:15px;
+        height:15px;
+        background-color: #059db2;
+        margin: 10px 0 30px 0;
+    }
+
+    .nosotros__div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+
+        
+
+        .nosotros__p1{
+            margin-right: 60px;
+            text-align: justify;
+            width:30%;
+            font-size: 15px;
+            margin-top:20px;
+        }
+
+        .nosotros__p2{
+            width:30%;
+            margin-left:60px;
+            text-align: justify;
+            font-size: 15px;
+            margin-top:20px;
+        }
+
+        .nosotros__border__div{
+            height: 300px;
+            border-left: solid 1px #059db2;
+        }
+       
+    }
+}
+
+#servicios{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to top,
+    rgba(4, 113, 128, 0.8),
+    rgba(4, 113, 128, 0.8)),url(img/main3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color:white;
+
+    h3{
+        font-size: 50px;
+        margin: 20px 0 10px 0;
+        font-weight: 1;
+    }
+
+    .servicios__relleno{
+        width:15px;
+        height:15px;
+        background-color: white;
+        margin: 20px 0 30px 0;
+    }
+
+    .servicios__div__container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:80%;
+
+        div{
+            width: 350px;
+            height: 120px;
+            background-color: rgba(255,255,255,0.2);
+            margin:25px 30px 25px 30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+}
