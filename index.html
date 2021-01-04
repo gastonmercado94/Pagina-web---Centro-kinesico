@@ -3,43 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro kinesico - San Cayetano</title>
+    <title>Centro kinésico - San Cayetano</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="img/logo2.png">
 </head>
 <body>
-    <header>
+    <header id="header">
         <section class="pre__header">
             <div class="logo"><img src="img/logo1.png" alt="Logo del centro"></div>
             <h1><span class="color-title">Centro</span> Kinesico <span class="color-title">San</span> Cayetano</h1>
-            <p>Llama 4800-0000</p>
+            <p>Llama 4726-6236</p>
         </section>
         <nav class="navbar">
             <ul class="navbar__menu">
-                <li class="navbar__menu__item"><a href=""></a>Inicio</li>
-                <li class="navbar__menu__item"><a href=""></a>Nosotros</li>
-                <li class="navbar__menu__item"><a href=""></a>Rehabilitación</li>
-                <li class="navbar__menu__item"><a href=""></a>Estética</li>
-                <li class="navbar__menu__item"><a href=""></a>Contacto</li>
+                <li class="navbar__menu__item"><a href="#header">Inicio</a></li>
+                <li class="navbar__menu__item"><a href="#nosotros">Nosotros</a></li>
+                <li class="navbar__menu__item"><a href="#servicios">Rehabilitación</a></li>
+                <li class="navbar__menu__item"><a href="#servicios">Estética</a></li>
+                <li class="navbar__menu__item"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <section class="main">
-            <a class="main__div1"><h2>Rehabilitación</h2></a>
-            <a class="main__div2"><h2>Estética</h2></a>
+            <a href="#servicios" class="main__div1"><h2>Rehabilitación</h2></a>
+            <a href="#servicios" class="main__div2"><h2>Estética</h2></a>
         </section>
     </header>
 
     <section id="nosotros">
-        <h3 class="nosotros__title">Nosotros</h3>
+        <h3 class="nosotros__title" class="titlestyle">NOSOTROS</h3>
         <div class="nosotros__relleno"></div>
-        <div class="nosotros__div">
+        <div class="nosotros__div"> 
+            <div class="div__p">
             <p class="nosotros__p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere!</p>
+            <p class="nosotros__p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere!</p>
+            </div>
             <p class="nosotros__border__div"></p>
+            <div class="div__p">
             <p class="nosotros__p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere!</p>
+            <p class="nosotros__p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iusto at corporis nisi sint quia architecto, dolores reprehenderit itaque reiciendis, labore unde commodi placeat eius expedita odio, magni aut facere!</p>
+            </div>
         </div>
     </section>
 
     <section id="servicios">
-        <h3 class="servicios__title">Servicios</h3>
+        <h3 class="servicios__title" class="titlestyle">SERVICIOS</h3>
         <div class="servicios__relleno"></div>
         <div class="servicios__div__container">
             <div>
@@ -62,5 +69,79 @@
             </div>
         </div>
     </section>
+
+    <section class="divisor__section">
+        <div class="divisor__div">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h3 class="contacto__title" class="titlestyle">CONTACTO</h3>
+        <div class="contacto__relleno"></div>
+        <div class="contacto__div">
+            <div class="contacto__info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13159.247280566347!2d-58.63521753442383!3d-34.456924457838646!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b47d592658ed548!2sCentro%20De%20Rehabilitacion%20San%20Cayetano!5e0!3m2!1ses!2sar!4v1609343426438!5m2!1ses!2sar" width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <form action="" class="contacto__form">
+
+                <div>
+                    <input type="text" name="name" placeholder="Nombre">
+                </div>
+
+                <div>
+                    <input type="text" name="surname" placeholder="Apellido">
+                </div>
+
+                <div>
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+
+                <div>
+                    <textarea name="Mensaje" id="" cols="30" rows="10" placeholder="Deje su mensaje"></textarea>
+                </div>
+
+                <div class="botones">
+                    <input type="submit" value="Enviar"><input type="reset" value="Limpiar">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer id="#footer">
+        <div class="footer__info">
+            <div class="footer__div1">
+                <h5><span><img src="img/phonelogo.png" alt="logo telefono" width="20px"></span>¡Contactanos!</h5>
+                <p>(011) 4726-6236</p>
+                <div class="logo__container">
+                    <a href=""><img src="img/facebooklogo.png" alt="logo facebook" width="20px" class="logofb"></a>
+                    <a href=""><img src="img/instagramlogo.png" alt="logo instagram" width="20px" class="logoinsta"></a>
+                </div>
+            </div>
+            <div class="footer__div2">
+                <ul class="lista1">
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Contacto</li>
+                </ul>
+                <ul class="lista2">
+                    <li>Rehabilitación</li>
+                    <li>Estética</li>
+                </ul>
+            </div>
+            <div class="footer__div3">
+                <h5><span><img src="img/locationlogo.png" alt="logo ubicacion" width="25px">General Pacheco</h5>
+                <p>Buenos Aires 557 (1617) </p>
+                <p>Provincia de Buenos Aires - Zona Norte</p>
+            </div>
+        </div>
+        <a href="#header"><img src="img/arrow2.png" alt="flecha" width="40px" class="arrow"></a>
+        <div class="colores">
+            <div class="span1"></div>
+            <div class="span2"></div>
+            <div class="span3"></div>
+        </div>
+    </footer>
 </body>
 </html>
