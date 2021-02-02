@@ -13,8 +13,7 @@ body {
 }
 
 body {
-  font-family: "Palermo", sans-serif;
-  font-weight: normal;
+  font-family: "Poppins", sans-serif;
 }
 
 .pre__header {
@@ -29,6 +28,7 @@ body {
   color: #059db2;
   position: relative;
   right: 15%;
+  font-family: "Palermo", sans-serif;
 }
 .pre__header h1 .color-title {
   color: #48744d;
@@ -49,13 +49,32 @@ body {
   align-items: center;
   height: 100%;
 }
-.navbar .navbar__menu a {
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
+.navbar .navbar__menu li {
+  height: 8vh;
+  padding: 0 10px;
+  transition: 0.6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.navbar .navbar__menu a:hover {
-  color: #059db2;
+.navbar .navbar__menu li a {
+  color: black;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navbar .navbar__menu li:hover {
+  background-color: #059db2;
+}
+.navbar .navbar__menu li:hover a {
+  color: white;
+}
+.navbar .navbar__menu .green:hover {
+  background-color: #48744d;
+}
+.navbar .navbar__menu .green:hover a {
+  color: white;
 }
 
 .main {
@@ -64,9 +83,9 @@ body {
   justify-content: center;
   align-items: flex-end;
   height: 75vh;
-  background-image: url(img/main2.jpg);
+  background-image: url(img/fondo3.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 .main a {
   display: flex;
@@ -132,58 +151,69 @@ body {
   text-align: justify;
   font-size: 15px;
   margin-top: 20px;
+  line-height: 27px;
 }
 #nosotros .nosotros__div .div__p .nosotros__p2 {
   margin-left: 60px;
   text-align: justify;
   font-size: 15px;
   margin-top: 20px;
+  line-height: 27px;
 }
 #nosotros .nosotros__div .nosotros__border__div {
-  height: 500px;
+  height: 550px;
   border-left: solid 1px #059db2;
 }
 
-#servicios {
+#rehabilitacion {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: linear-gradient(to top, rgba(4, 113, 128, 0.9), rgba(4, 113, 128, 0.9)), url(img/main3.jpg);
+  background-image: linear-gradient(to top, rgba(4, 113, 128, 0.95), rgba(4, 113, 128, 0.95)), url(img/fondo2.jpg);
   background-size: cover;
   background-position: bottom;
   color: white;
 }
-#servicios h3 {
+#rehabilitacion h3 {
   margin: 50px 0 30px 0;
   font-size: 60px;
   font-weight: 540;
   font-family: "Arial", "Helvetica", sans-serif;
 }
-#servicios .servicios__relleno {
+#rehabilitacion .rehabilitacion__relleno {
   width: 15px;
   height: 15px;
   background-color: white;
   margin: 20px 0 30px 0;
 }
-#servicios .servicios__div__container {
+#rehabilitacion .rehabilitacion__div__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  width: 80%;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
   margin-bottom: 80px;
 }
-#servicios .servicios__div__container div {
-  width: 350px;
-  height: 120px;
+#rehabilitacion .rehabilitacion__div__container div {
+  width: 30%;
   background-color: rgba(255, 255, 255, 0.2);
-  margin: 25px 30px 25px 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
-#servicios .servicios__div__container div h4 {
+#rehabilitacion .rehabilitacion__div__container div h4 {
+  background-color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  width: 100%;
   font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+#rehabilitacion .rehabilitacion__div__container div p {
+  padding: 25px;
+  line-height: 35px;
+  font-size: 15px;
 }
 
 .divisor__section .divisor__div {
@@ -192,6 +222,65 @@ body {
   background-image: url(img/divisor.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.divisor__section2 .divisor__div2 {
+  height: 100vh;
+  background: fixed;
+  background-image: url(img/ventosas.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#estetica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(72, 116, 77, 0.95), rgba(72, 116, 77, 0.95)), url(img/fondo2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+}
+#estetica h3 {
+  margin: 50px 0 30px 0;
+  font-size: 60px;
+  font-weight: 540;
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+#estetica .estetica__relleno {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  margin: 20px 0 30px 0;
+}
+#estetica .estetica__div__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+#estetica .estetica__div__container div {
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#estetica .estetica__div__container div h4 {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px;
+}
+#estetica .estetica__div__container div p {
+  padding: 25px;
+  line-height: 35px;
+  font-size: 15px;
 }
 
 #contacto {
@@ -229,6 +318,7 @@ body {
 }
 #contacto .contacto__div .contacto__info iframe {
   border-radius: 8px;
+  box-shadow: 0px 0px 10px 3px #059db2;
 }
 #contacto .contacto__div .contacto__form {
   display: flex;
@@ -271,14 +361,13 @@ body {
 }
 
 footer {
-  height: 40vh;
+  height: 47vh;
   background: #EEE;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-family: "Arial", "Helvetica", sans-serif;
 }
 footer .footer__info {
   height: 38.5vh;
@@ -287,6 +376,9 @@ footer .footer__info {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+footer .footer__info .footer__div1 {
+  margin-top: 50px;
 }
 footer .footer__info .footer__div1 h5 {
   font-size: 20px;
@@ -302,6 +394,9 @@ footer .footer__info .footer__div1 p {
   font-size: 25px;
   font-weight: 700;
   margin: 20px 0 20px 0;
+}
+footer .footer__info .footer__div1 .parrafo__celu {
+  color: #48744d;
 }
 footer .footer__info .footer__div1 .logo__container {
   display: flex;
@@ -328,12 +423,11 @@ footer .footer__info .footer__div2 .lista2 {
 footer .footer__info .footer__div2 ul li {
   margin: 25px 0 25px 0;
   font-size: 17px;
-  font-weight: 100 !important;
 }
 footer .footer__info .footer__div3 h5 {
   font-size: 25px;
   color: #055EAA;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 footer .footer__info .footer__div3 h5 img {
   position: relative;
@@ -341,7 +435,10 @@ footer .footer__info .footer__div3 h5 img {
   margin: 0 10px 0 0;
 }
 footer .footer__info .footer__div3 p {
-  margin: 10px 0 10px 0;
+  margin: 25px 0 10px 0;
+}
+footer a {
+  height: 7vh;
 }
 footer a .arrow {
   margin-bottom: 10px;
