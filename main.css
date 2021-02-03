@@ -83,7 +83,7 @@ body {
   justify-content: center;
   align-items: flex-end;
   height: 75vh;
-  background-image: url(img/fondo3.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(img/fondo3.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -163,6 +163,9 @@ body {
 #nosotros .nosotros__div .nosotros__border__div {
   height: 550px;
   border-left: solid 1px #059db2;
+}
+#nosotros .nosotros__div .cuadradoMobile {
+  display: none;
 }
 
 #rehabilitacion {
@@ -462,8 +465,213 @@ footer .colores .span3 {
   width: 33.33vw;
 }
 
-.titlestyle {
-  font-size: 70px;
-  font-weight: 500;
-  font-family: "Arial", "Helvetica", sans-serif;
+@media screen and (max-width: 768px) {
+  * {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #header .pre__header {
+    display: none;
+  }
+  #header .navbar {
+    display: none;
+  }
+  #header .main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/fondo3.jpg);
+  }
+  #header .main a {
+    margin: 20px 0 20px 0;
+  }
+
+  #nosotros .nosotros__title {
+    font-size: 40px;
+  }
+  #nosotros .nosotros__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  #nosotros .nosotros__div .div__p {
+    width: 80%;
+  }
+  #nosotros .nosotros__div .div__p .nosotros__p1 {
+    margin-right: 0;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  #nosotros .nosotros__div .div__p .nosotros__p2 {
+    margin-left: 0;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+  #nosotros .nosotros__div .nosotros__border__div {
+    display: none;
+  }
+  #nosotros .nosotros__div .cuadradoMobile {
+    display: block;
+    margin-top: 40px;
+  }
+
+  #rehabilitacion .rehabilitacion__title {
+    font-size: 40px;
+  }
+  #rehabilitacion .rehabilitacion__relleno {
+    margin-bottom: 0;
+  }
+  #rehabilitacion .rehabilitacion__div__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #rehabilitacion .rehabilitacion__div__container div {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #estetica .estetica__title {
+    font-size: 40px;
+  }
+  #estetica .estetica__relleno {
+    margin-bottom: 0;
+  }
+  #estetica .estetica__div__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  #estetica .estetica__div__container div {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #contacto {
+    height: auto;
+  }
+  #contacto .contacto__title {
+    font-size: 40px;
+  }
+  #contacto .contacto__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  #contacto .contacto__div .contacto__info {
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+  #contacto .contacto__div .contacto__form {
+    width: 80vw;
+  }
+  #contacto .contacto__div .contacto__form input {
+    width: 80vw;
+    height: 35px;
+  }
+  #contacto .contacto__div .contacto__form textarea {
+    width: 80vw;
+  }
+  #contacto .contacto__div .contacto__form .botones {
+    width: 80vw;
+    margin-top: 10px;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .footer__info {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__info .footer__div1 {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-rows: 7vh 10vh 10vh;
+    grid-template-areas: "contactanos logos" "telefono telefono" "celu celu";
+  }
+  footer .footer__info .footer__div1 h5 {
+    grid-area: contactanos;
+    margin: 0 0 0 0;
+  }
+  footer .footer__info .footer__div1 p {
+    text-align: center;
+    width: 90vw;
+    margin: 5px 0 5px 0;
+  }
+  footer .footer__info .footer__div1 .parrafo__telefono {
+    grid-area: telefono;
+  }
+  footer .footer__info .footer__div1 .parrafo__celu {
+    grid-area: celu;
+    text-align: center;
+  }
+  footer .footer__info .footer__div1 .logo__container {
+    grid-area: logos;
+    margin: 0 0 0 0;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  footer .footer__info .footer__div2 {
+    display: none;
+  }
+  footer .footer__info .footer__div3 {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__info .footer__div3 h5 {
+    margin-bottom: 0;
+  }
+  footer a {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__info .footer__div1 h5 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  footer .footer__info .footer__div1 .parrafo__telefono {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  footer .footer__info .footer__div1 .parrafo__celu {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  footer .footer__info .footer__div1 .logo__container {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }

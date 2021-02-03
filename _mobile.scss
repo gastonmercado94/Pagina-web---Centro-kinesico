@@ -1,0 +1,254 @@
+@media screen and (max-width: 768px){  
+
+
+    *{
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #header{
+
+        .pre__header{
+            display: none;
+        }
+
+        .navbar{
+            display: none;
+        }
+
+        .main{
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            background-image: linear-gradient(to top,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(img/fondo3.jpg);
+
+            a{
+                margin: 20px 0 20px 0;
+            }
+        }
+    }
+
+    #nosotros{
+
+        .nosotros__title{
+            font-size: 40px;
+        }
+
+        .nosotros__div{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+
+            .div__p{
+                width: 80%;
+
+                .nosotros__p1{
+                    margin-right: 0;
+                    text-align: justify;
+                    font-size: 15px;
+                    margin-top:20px;
+                    line-height: 30px;
+                }
+
+                .nosotros__p2{
+                    margin-left: 0;
+                    text-align: justify;
+                    font-size: 15px;
+                    margin-top: 20px;
+                    line-height: 30px;
+                }
+    
+            }
+
+            .nosotros__border__div{
+                display: none;
+            }
+
+            .cuadradoMobile{
+                display: block;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    #rehabilitacion{
+
+        .rehabilitacion__title{
+            font-size: 40px;
+        }
+
+        .rehabilitacion__relleno{
+            margin-bottom: 0;
+        }
+
+        .rehabilitacion__div__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+
+            div{
+                width: 80%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    #estetica{
+
+        .estetica__title{
+            font-size: 40px;
+        }
+
+        .estetica__relleno{
+            margin-bottom: 0;
+        }
+
+        .estetica__div__container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+
+            div{
+                width: 80%;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    #contacto{
+
+        height: auto;
+
+        .contacto__title{
+            font-size: 40px;
+        }
+
+        .contacto__div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 60px;
+
+            .contacto__info{
+                width: 100%;
+                margin: 0 0 50px 0;
+            }
+
+            .contacto__form{
+
+                width: 80vw;
+
+    
+                input{
+                    width:80vw;
+                    height:35px;
+                }
+    
+                textarea{
+                    width: 80vw;
+
+                }
+    
+                .botones{
+
+                    width: 80vw;
+                    margin-top:10px;
+
+                }
+            }
+
+        }
+    }
+
+    footer{
+
+        height: auto;
+
+        .footer__info{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .footer__div1{
+                width: 90vw;
+                display: grid;
+                grid-template-columns: 65vw 35vw;
+                grid-template-rows: 7vh 10vh 10vh;
+                grid-template-areas: 
+                "contactanos logos"
+                "telefono telefono"
+                "celu celu";
+
+                h5{
+                    grid-area: contactanos;
+                    margin: 0 0 0 0;
+                }
+
+                p{
+                    text-align: center;
+                    width: 90vw;
+                    margin: 5px 0 5px 0;
+                }
+
+                .parrafo__telefono{
+                    grid-area: telefono;
+                }
+
+                .parrafo__celu{
+                    grid-area: celu;
+                    text-align: center;
+                }
+
+                .logo__container{
+                    grid-area: logos;
+                    margin: 0 0 0 0;
+                    padding-top: 5px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+            }
+
+            .footer__div2{
+                display: none;
+            }
+
+            .footer__div3{
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h5{
+                    margin-bottom: 0;
+                }
+            }
+
+            
+        }
+
+        a{
+            height: auto;
+        }
+
+    }
+
+}
