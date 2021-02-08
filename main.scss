@@ -29,6 +29,10 @@
     height: 8vh;
     background-color: #EEE;
 
+    .close{
+        display: none;
+    }
+
     .navbar__menu{
         display: flex;
         flex-direction: row;
@@ -64,6 +68,11 @@
             }
             
         }
+
+        .hiddenlogo{
+            display: none;
+        }
+
         .green{
             &:hover{
                 background-color:  #48744d;
@@ -76,6 +85,10 @@
         
     }
 
+}
+
+.open{
+    display: none;
 }
 
 .main{

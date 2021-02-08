@@ -42,6 +42,9 @@ body {
   height: 8vh;
   background-color: #EEE;
 }
+.navbar .close {
+  display: none;
+}
 .navbar .navbar__menu {
   display: flex;
   flex-direction: row;
@@ -70,11 +73,18 @@ body {
 .navbar .navbar__menu li:hover a {
   color: white;
 }
+.navbar .navbar__menu .hiddenlogo {
+  display: none;
+}
 .navbar .navbar__menu .green:hover {
   background-color: #48744d;
 }
 .navbar .navbar__menu .green:hover a {
   color: white;
+}
+
+.open {
+  display: none;
 }
 
 .main {
@@ -477,7 +487,42 @@ footer .colores .span3 {
     display: none;
   }
   #header .navbar {
-    display: none;
+    top: 0;
+    left: -100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    transition: left 1s;
+  }
+  #header .navbar .navbar__menu {
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #header .navbar .navbar__menu .navbar__menu__item {
+    height: 15%;
+    width: 100%;
+  }
+  #header .navbar .navbar__menu .navbar__menu__item a {
+    font-size: 24px;
+  }
+  #header .navbar .navbar__menu .hiddenlogo {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  #header .navbar .close {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  #header .navbar .close img {
+    width: 40px;
   }
   #header .main {
     height: 100vh;
@@ -489,6 +534,24 @@ footer .colores .span3 {
   }
   #header .main a {
     margin: 20px 0 20px 0;
+  }
+  #header .open {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    transition: 0.5s;
+  }
+  #header .open img {
+    width: 50px;
+  }
+
+  #nav:target {
+    left: 0;
+  }
+
+  #nav:target ~ .open {
+    display: none;
   }
 
   #nosotros .nosotros__title {
